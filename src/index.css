@@ -1,0 +1,94 @@
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.github_svg {
+  width: 24px;
+  height: 24px;
+  fill: rgba(235, 235, 235, 0.6);
+}
+
+.github_svg:hover {
+  fill: #e1e1e1;
+  cursor: pointer;
+}
+
+.input-group-text:hover {
+  cursor: pointer;
+}
+
+.image-container {
+  position: relative;
+}
+
+.grid-image {
+  opacity: 1;
+  width: 100%;
+  height: 200px;
+  display: block;
+  object-fit: cover;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  transition: 0.5s ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.image-container:hover .grid-image {
+  opacity: 0.3;
+}
+
+.image-container:hover .middle {
+  opacity: 1;
+}
+
+.image-text {
+  color: white;
+  padding: 12px 24px;
+  font-size: 0.875rem;
+  background-color: #7a7d7c;
+}
+
+.image-text:hover {
+  cursor: pointer;
+}
+
+.load-more {
+  text-align: center;
+}
+
+.load-more span {
+  font-size: 0.875rem;
+}
+
+.load-more span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  padding: 0.875rem 0;
+  font-size: 0.875rem;
+  background-color: #212529;
+}
